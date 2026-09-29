@@ -25,6 +25,7 @@ body {
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #1f2833;
+    transition: all 0.4s ease;
 }
 
 .nav-container {
@@ -82,13 +83,12 @@ body {
 }
 
 /* -----------------------------------------
-   HERO BANNER
+   HERO BANNER (DENGAN GAMBAR UTAMA)
 ----------------------------------------- */
 .hero {
     height: 85vh;
-    /* Latar belakang banner menggunakan tema sepatu futuristik */
     background: linear-gradient(to right, rgba(11,12,16,0.95) 30%, rgba(11,12,16,0.4)), 
-                url('https://unsplash.com') center/cover;
+                url('https://unsplash.com') center/cover no-repeat;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -203,7 +203,7 @@ body {
 }
 
 /* -----------------------------------------
-   CATEGORIES HUB
+   CATEGORIES HUB (DENGAN GAMBAR KATEGORI)
 ----------------------------------------- */
 .categories-section {
     max-width: 1200px;
@@ -236,7 +236,7 @@ body {
     transition: 0.5s ease;
 }
 
-/* Gambar Kategori Berbeda */
+/* Tautan Gambar Kategori Langsung dari Internet */
 .item-performance {
     background-image: url('https://unsplash.com');
 }
@@ -280,7 +280,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     display: inline-flex;
-    align-items: center;
+    align-flex: center;
     gap: 8px;
 }
 
