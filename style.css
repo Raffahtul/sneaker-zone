@@ -303,3 +303,37 @@ footer {
     color: #666;
     font-size: 14px;
 }
+/* -----------------------------------------
+   PERBAIKAN UNTUK LAYAR HP (RESPONSIF)
+----------------------------------------- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Membuat logo dan menu bertumpuk rapi atas-bawah */
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap; /* Biar kalau menunya banyak, otomatis turun ke bawahnya anggun */
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 0 10px; /* Mempersempit jarak antar menu di HP agar pas */
+    }
+
+    .nav-links a {
+        font-size: 13px; /* Memperkecil sedikit ukuran tulisan menu di HP */
+    }
+
+    .hero {
+        margin-top: 140px; /* Memberi ruang lebih di atas agar tidak ketutupan menu navbar yang meninggi */
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px; /* Mengecilkan judul utama agar pas di layar HP */
+    }
+}
